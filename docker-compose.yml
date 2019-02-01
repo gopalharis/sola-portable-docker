@@ -5,7 +5,7 @@ networks:
 
 services:
   database.sola.com:
-    image: sunderdocker/sola-database:1.0
+    image: aequalissola/sola-database:1.0
     environment:
       - PGPORT=5444
     container_name: database.sola.com
@@ -17,7 +17,7 @@ services:
       - sola
 
   database.init.sola.com:
-    image: aequalis/sola-db:1.0
+    image: aequalissola/sola-database:1.0
     environment:
       - DBHOST=database.sola.com
       - DBPORT=5444
@@ -29,7 +29,7 @@ services:
       - sola
 
   application.sola.com:
-    image: sunderdocker/sola-application:1.0
+    image: aequalissola/sola-application:1.0
     container_name: application.sola.com
     ports:
       - 8080:8080
