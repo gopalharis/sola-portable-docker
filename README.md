@@ -5,6 +5,7 @@
 `git clone https://github.com/gopalharis/sola-portable-docker.git`
 
 #### Step 2
+Install Docker
 Install JDK 1.8
 
 #### Step 3
